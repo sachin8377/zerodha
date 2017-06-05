@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'quotefont';
+    src: url('../fonts/quote.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main {
+    background: rgba(215,238,243,1);
+    background: -moz-linear-gradient(-45deg, rgba(215,238,243,1) 0%, rgba(215,238,243,1) 76%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(215,238,243,1)), color-stop(76%, rgba(215,238,243,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(215,238,243,1) 0%, rgba(215,238,243,1) 76%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(215,238,243,1) 0%, rgba(215,238,243,1) 76%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(215,238,243,1) 0%, rgba(215,238,243,1) 76%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(215,238,243,1) 0%, rgba(215,238,243,1) 76%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7eef3', endColorstr='#ffffff', GradientType=1 );
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'quotefont';
+    font-size: 3vw;
+    color: #5a6f77;
+    visibility: hidden;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+}
